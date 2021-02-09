@@ -1,0 +1,8 @@
+extract.php:    $url="https://api.cin7.com/api/v1/Products?where=(stockControl=%27FIFO%27)and(status=%27Public%27)&order=&rows=250&fields=category,productType,customfields(products_1000,products_1002,products_1003,products_1004,products_1005),name,styleCode,brand,productType,description,stockControl,productOptions(code,option1,option2,priceColumns(frbareurincleur,hkbarhkdhkd,sgbarsgdincsgd))";
+extract_cin.php:        //$url="https://api.cin7.com/api/v1/Products?where=(stockControl='FIFO')and(status='Public')&order=category&rows=250";
+extract_cin.php:        $url="https://api.cin7.com/api/v1/Products?where=(stockControl=%27FIFO%27)and(status=%27Public%27)&order=category&rows=250&fields=category,customfields(products_1003,products_1004),name,styleCode,brand,productType,description,stockControl,productOptions(code,option1,option2,retailPrice)";
+extract_cin.php:        //https://api.cin7.com/api/v1/Products?where=(stockControl='FIFO'&fields=customFields)and(status='Public')&order=category&fields=category,name&rows=250
+
+PDF_generator.php://             if ($previous_cat!=$Product['category']) {
+PDF_generator.php://                 $pdf->Cell(40, 10, $Product['category']);
+PDF_generator.php://                 $previous_cat=$Product['category'];
